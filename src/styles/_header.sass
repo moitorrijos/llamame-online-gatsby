@@ -1,10 +1,11 @@
 @import 'colors'
 @import 'fonts'
+@import 'helpers'
 
 header
-  border-top: 0.75rem solid $secondary-color
-  border-bottom: 0.75rem solid lighten($primary-color, 15%)
-  background-image: linear-gradient(120deg, lighten($primary-color, 12%), darken($primary-color, 5%))
+  border-top: $border-top
+  border-bottom: 0.75rem solid lighten($primary-color, 20%)
+  background-image: $linear-gradient
   color: white
 
   h1, h2

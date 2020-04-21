@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "../components/footer"
 import "../styles/_reset.sass"
 import "../styles/_layout.sass"
 
@@ -29,30 +30,8 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="main-container">
         <main>{children}</main>
-        <footer>
-          Llámame Online es un servicio de
-          {` `}
-          <a
-            href="https://servidoresrapidos.net"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Servidores Rápidos, S. A.
-          </a>
-          {` `}
-          Todos los derechos reservados © {new Date().getFullYear()}. Diseñado y
-          Desarrollado por
-          {` `}
-          <a
-            href="https://moitorrijos.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Moi Torrijos.
-          </a>
-        </footer>
       </div>
+      <Footer />
     </>
   )
 }

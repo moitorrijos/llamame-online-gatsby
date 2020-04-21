@@ -1,5 +1,6 @@
 @import 'fonts'
 @import 'colors'
+@import 'helpers'
 
 html
   font-size: 16px
@@ -26,14 +27,20 @@ h2
   font-size: 1.8rem
   margin: 2rem 0
 
+h3
+  font-size: 1.6rem
+  margin: 1rem 0
+
 p
   margin: 2rem 0
   line-height: 1.5
 
 .main-container
-  max-width: 1200px
-  margin: 0 auto
-  padding: 1rem 2rem 0
+  @extend %container
+  padding: 1rem 2rem
+
+.inner-container
+  @extend %container
 
 .flex
   display: flex
@@ -50,9 +57,6 @@ p
     row-gap: 20px
     align-items: center
 
-@mixin transform($displ)
-  transform: scale(1.1) translateY($displ)
-
 .icon
   svg
     width: 105%
@@ -60,11 +64,11 @@ p
 
   &.right
     svg
-      @include transform(-13px)
+      @include transform(-7px)
 
   &.left
     svg
-      @include transform(13px)
+      @include transform(7px)
 
 .icon
   &.right svg, &.left svg
