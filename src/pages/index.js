@@ -16,10 +16,10 @@ const IndexPage = () => (
       lang="es"
     />
     <div className="main-container grid">
-      <div className="icon">
+      <div className="icon desktop-image">
         <DesktopIcon />
       </div>
-      <div className="inner-text">
+      <div className="inner-text desktop-text">
         <h2>Inicia una Conferencia</h2>
         <p>
           Puedes proteger tus conferencias con contraseña de acceso, compartir
