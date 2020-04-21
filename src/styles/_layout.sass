@@ -50,7 +50,7 @@ p
 .grid
   display: grid
   grid-template-columns: 1fr 1fr
-  column-gap: 20px
+  column-gap: 60px
 
   @media screen and (max-width: 600px)
     grid-template-columns: 1fr
@@ -58,9 +58,10 @@ p
     align-items: center
 
 .icon
+  overflow: hidden
   svg
-    width: 105%
-    height: 105%
+    width: 100%
+    height: 100%
 
   &.right
     svg
@@ -74,3 +75,10 @@ p
   &.right svg, &.left svg
     @media screen and (max-width: 600px)
       transform: none
+
+.inner-text
+  max-width: 400px
+  align-self: center
+
+  @media screen and (max-width: 600px)
+    justify-self: center
