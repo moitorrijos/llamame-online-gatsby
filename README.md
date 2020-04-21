@@ -4,7 +4,7 @@
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Use the Gatsby CLI to create site using this project.
 
     ```shell
     # create a new Gatsby site using the default starter
@@ -49,6 +49,8 @@
     npx gatsby serve
     ```
 
-    You can upload the public folder in any web hosting or web server. The site is 100% static.
+    The site will now be running at `http://localhost:9000` 🔥
+
+    You can upload the public folder to any web web server. The site is 100% static.
 
     If you need more information on how to start a Gatsby developed website visit [Gatsby Quick Start Tutorial](https://www.gatsbyjs.org/docs/quick-start/)
