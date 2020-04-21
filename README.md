@@ -7,7 +7,6 @@
     Use the Gatsby CLI to create site using this project.
 
     ```shell
-    # create a new Gatsby site using the default starter
     npx gatsby new llamame-online https://github.com/moitorrijos/llamame-online-gatsby
     ```
 
@@ -33,7 +32,7 @@
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `llamame-online` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 1.  **When finished create a production ready version**
 
@@ -51,6 +50,6 @@
 
     The site will now be running at `http://localhost:9000` 🔥
 
-    You can upload the generated public folder to any web web server. The site is 100% static.
+    You can upload the generated public folder to any web server. The site is 100% static.
 
     If you need more information on how to start a Gatsby developed website visit [Gatsby Quick Start Tutorial](https://www.gatsbyjs.org/docs/quick-start/)
