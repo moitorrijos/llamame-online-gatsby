@@ -1,32 +1,30 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from "../icons/llamame-online-logo.svg"
+import HeroImage from "../icons/llamame-online-banner.svg"
+import ConferenceLink from "../components/video-conference"
+import "../styles/_header.sass"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <header>
+    <div className="main-container grid">
+      <div className="logo">
+        <Logo className="llamame-online-logo" />
+      </div>
+      <ConferenceLink color="white" />
+    </div>
+    <div className="main-container grid">
+      <div className="hero-text">
+        <h1>Llámame con Confianza</h1>
+        <p>
+          Llámame online es una plataforma rápida, segura y completamente gratis
+          para crear conferencias online.
+        </p>
+        <ConferenceLink color="white" />
+      </div>
+      <div className="hero-image icon right">
+        <HeroImage />
+      </div>
     </div>
   </header>
 )

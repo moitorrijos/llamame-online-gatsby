@@ -1,0 +1,37 @@
+@import 'colors'
+
+a.conference-link
+  text-decoration: none
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: space-around
+  text-transform: uppercase
+  border-width: 2px
+  border-style: solid
+  border-radius: 30px
+  padding: 1rem
+  margin: 2rem 0
+  max-width: 320px
+  justify-self: end
+
+  svg
+    margin-right: 12px
+
+    @media screen and (max-width: 312px)
+      display: none
+
+  &.white
+    border-color: white
+    color: white
+    svg
+      fill: white
+  &.primary
+    color: $primary-color
+    border-color: $primary-color
+    svg
+      fill: $primary-color
+
+@media screen and (max-width: 600px)
+  a.conference-link
+    display: none

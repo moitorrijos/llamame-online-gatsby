@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "../styles/_reset.sass"
+import "../styles/_layout.sass"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,18 +27,30 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className="main-container">
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          Llámame Online es un servicio de
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a
+            href="https://servidoresrapidos.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Servidores Rápidos, S. A.
+          </a>
+          {` `}
+          Todos los derechos reservados © {new Date().getFullYear()}. Diseñado y
+          Desarrollado por
+          {` `}
+          <a
+            href="https://moitorrijos.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Moi Torrijos.
+          </a>
         </footer>
       </div>
     </>

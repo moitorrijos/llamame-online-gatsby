@@ -1,0 +1,72 @@
+@import 'fonts'
+@import 'colors'
+
+html
+  font-size: 16px
+
+  @media screen and (max-width: 1200px)
+    font-size: 14px
+
+  @media screen and (max-width: 312px)
+    font-size: 12px
+
+body
+  font-family: $body-font-family
+  color: $primary-color
+
+h1, h2, h3, h4
+  font-family: $header-font-family
+  line-height: 1.1
+
+h1
+  font-size: 2rem
+  margin: 2rem 0
+
+h2
+  font-size: 1.8rem
+  margin: 2rem 0
+
+p
+  margin: 2rem 0
+  line-height: 1.5
+
+.main-container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 1rem 2rem 0
+
+.flex
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+.grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  column-gap: 20px
+
+  @media screen and (max-width: 600px)
+    grid-template-columns: 1fr
+    row-gap: 20px
+    align-items: center
+
+@mixin transform($displ)
+  transform: scale(1.1) translateY($displ)
+
+.icon
+  svg
+    width: 105%
+    height: 105%
+
+  &.right
+    svg
+      @include transform(-13px)
+
+  &.left
+    svg
+      @include transform(13px)
+
+.icon
+  &.right svg, &.left svg
+    @media screen and (max-width: 600px)
+      transform: none
