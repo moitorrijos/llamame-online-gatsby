@@ -11,7 +11,7 @@ const Header = () => (
       <div className="logo">
         <Logo className="llamame-online-logo" />
       </div>
-      <ConferenceLink color="white" />
+      <ConferenceLink color="white" mobileView="not-for-mobile" />
     </div>
     <div className="main-container grid">
       <div className="inner-text">

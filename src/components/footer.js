@@ -12,7 +12,7 @@ const Footer = () => (
           <p>
             Llámame online es una plataforma rápida, segura y completamente
             gratuita para crear conferencias online. Es un servicio de
-            Servidores Rápidos, S. A.
+            ServidoresRapidos.ent
           </p>
         </div>
         <div className="atencion">
@@ -35,7 +35,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Servidores Rápidos
+              ServidoresRapidos.net
             </a>{" "}
             es una empresa de hospedaje de aplicaciones web y móviles
           </p>
@@ -62,7 +62,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Servidores Rápidos, S. A.
+            ServidoresRapidos.net
           </a>
           {` `}
           Todos los derechos reservados © {new Date().getFullYear()}. Diseñado y

@@ -10,32 +10,40 @@ a.conference-link
   border-width: 2px
   border-style: solid
   border-radius: 30px
-  padding: 1rem
+  padding: 1rem 2rem
   margin: 2rem 0
   max-width: 320px
   justify-self: end
+  transition: all 0.25s ease-in-out
 
   svg
     margin-right: 12px
 
-    @media screen and (max-width: 312px)
+    @media screen and (max-width: 320px)
       display: none
-
   &.white
     border-color: white
     color: white
+
+    &:hover
+      background-color: transparentize(white, 0.70)
+
     svg
       fill: white
   &.primary
     color: $primary-color
     border-color: $primary-color
+
+    &:hover
+      background-color: transparentize($primary-color, 0.70)
+
     svg
       fill: $primary-color
-
-@media screen and (max-width: 600px)
-  a.conference-link
-    display: none
 
 header a.conference-link
   margin: 0
   align-self: center
+
+@media screen and (max-width: 600px)
+  a.conference-link.not-for-mobile
+    display: none

@@ -15,7 +15,7 @@ const IndexPage = () => (
       description="Plataforma de Video Conferencias"
       lang="es"
     />
-    <div className="main-container grid">
+    <div className="inner-container grid">
       <div className="icon desktop-image">
         <DesktopIcon />
       </div>
@@ -29,7 +29,7 @@ const IndexPage = () => (
         <VideoConference color="primary" />
       </div>
     </div>
-    <div className="main-container grid">
+    <div className="inner-container grid">
       <div className="inner-text">
         <h2>Baja la Aplicación</h2>
         <p>
