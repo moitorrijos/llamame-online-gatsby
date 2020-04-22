@@ -15,7 +15,7 @@ const Header = () => (
     </div>
     <div className="main-container grid">
       <div className="inner-text">
-        <h1>Llámame con Confianza</h1>
+        <h1>Llama con Confianza</h1>
         <p>
           Llámame online es una plataforma rápida, segura y completamente gratis
           para crear conferencias online.
