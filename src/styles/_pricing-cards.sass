@@ -1,0 +1,47 @@
+@import 'colors'
+
+.pricing-cards
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+  column-gap: 20px
+  row-gap: 20px
+  color: $font-color
+  padding: 2rem 0
+
+.pricing-card
+  padding: 1rem 2rem
+  border-radius: 20px
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15)
+  align-self: self-start
+
+  &:first-child
+    border-top: 40px solid $primary-color
+
+  &:nth-child(2)
+    border-top: 40px solid $yellow
+
+  &:nth-child(3)
+    border-top: 40px solid $green
+
+  h2, h3
+    text-align: center
+
+  ul
+    list-style: none
+    padding: 0
+
+    li
+      background: url("../assets/interface.svg") no-repeat left center
+      padding: 0.5rem 0 0.5rem 2rem
+      line-height: 1.1
+
+  a
+    margin: 1rem 0
+    display: block
+    text-align: center
+
+.asterisk
+  max-width: 500px
+  margin: 1rem auto
+  text-align: center
+  color: lighten($font-color, 15%)

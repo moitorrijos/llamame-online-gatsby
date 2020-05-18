@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Llámame Online`,
-    description: `Llámame online es una plataforma rápida, segura y completamente gratis para crear conferencias online.`,
+    description: `Centrales Telefónicas y Videollamadas en la Nube.`,
     author: `@moitorrijos`,
   },
   plugins: [

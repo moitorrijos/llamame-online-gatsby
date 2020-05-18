@@ -3,7 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DesktopIcon from "../icons/llamame-online-desktop.svg"
-import VideoConference from "../components/video-conference"
+import PrimaryButton from "../components/primary-button"
+import VideoConference from "../icons/video.svg"
+import PrincingCards from "../components/pricing-cards"
 import AppStoreIcon from "../icons/download-on-the-app-store-apple.svg"
 import GooglePlayIcon from "../icons/google-play-badge.svg"
 import LlamameOnlineApp from "../icons/llamame-online-app.svg"
@@ -24,22 +26,32 @@ const IndexPage = () => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Layout>
         <SEO
-          title="Inicio"
-          description="Plataforma de Video Conferencias"
+          title="Llámame Online"
+          description="Centrales Telefónicas y Videollamadas en la Nube"
           lang="es"
         />
+        <PrincingCards />
         <div className="inner-container grid">
           <div className="icon desktop-image">
             <DesktopIcon />
           </div>
           <div className="inner-text desktop-text">
-            <h2>Inicia una Conferencia</h2>
+            <h2>Inicia una Videllamada</h2>
             <p>
-              Puedes proteger tus conferencias con contraseña de acceso,
-              compartir videos, compartir tu pantalla, chatear durante la
-              conferencia y mucho más.
+              Puedes utilizar nuestro servicio de videollamada de forma
+              gratuita, segura e ilimitada. Te recomendamos que la uses en
+              Google Chrome para obtener los mejores resultados. Puedes invitar
+              a todos los que quieras. No necesitas instalar nada si lo usas en
+              tu computador personal.
             </p>
-            <VideoConference color="primary" />
+            <PrimaryButton
+              color="primary"
+              linkTo="https://hey.llamame.online/"
+              style={{ fontSize: "0.8rem" }}
+            >
+              <VideoConference style={{ marginRight: 20 }} /> Inicia una
+              VideoLLamada Gratuita
+            </PrimaryButton>
           </div>
         </div>
         <div className="inner-container grid">
