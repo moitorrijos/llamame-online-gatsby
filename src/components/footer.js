@@ -71,7 +71,7 @@ const Footer = () => (
             rel="noopener noreferrer"
           >
             {" "}
-            Moi Torrijos.
+            MoiTorrijos.com
           </a>
         </p>
       </div>
