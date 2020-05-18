@@ -58,9 +58,9 @@ const IndexPage = () => {
           <div className="inner-text">
             <h2>Baja la Aplicación</h2>
             <p>
-              Llámame utiliza Jitsi Meet, un software de videoconferencias de
-              fuente abierta. Descarga la aplicación para tu teléfono. En tu
-              computadora sólo necesitas un buen navegador.
+              Para hacer videollamadas en tu móvil necesitarás descargar la
+              aplicación Jitsi Meet, un software de videoconferencias gratuito y
+              de código abierto. Descarga la aplicación para tu teléfono.
             </p>
             <div className="app-store">
               <a
