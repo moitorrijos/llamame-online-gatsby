@@ -10,20 +10,47 @@ import AppStoreIcon from "../icons/download-on-the-app-store-apple.svg"
 import GooglePlayIcon from "../icons/google-play-badge.svg"
 import LlamameOnlineApp from "../icons/llamame-online-app.svg"
 import Header from "../components/header"
+import { useLocalJsonForm } from "gatsby-tinacms-json"
+
+const FormOptions = {
+  fields: [
+    {
+      label: "Hero Copy",
+      name: "rawJson.text",
+      description: "Hero copy for the main block.",
+      component: "textarea",
+    },
+    {
+      label: "Hero Button Copy",
+      name: "rawJson.button",
+      description: "Copy for call to action button on the main block.",
+      component: "text",
+    },
+    {
+      label: "Contact Button Copy",
+      name: "rawJson.contact",
+      description: "Copy for the contact button on the main navigation area.",
+      component: "text",
+    },
+  ],
+}
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+    query data {
+      dataJson {
+        rawJson
+        fileRelativePath
+        text
+        button
+        contact
       }
     }
   `)
+  const [dataQuery] = useLocalJsonForm(data.dataJson, FormOptions)
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header header={dataQuery} />
       <Layout>
         <SEO
           title="Llámame Online"
