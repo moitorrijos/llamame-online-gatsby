@@ -36,10 +36,10 @@ const IndexPage = () => (
           </p>
           <p className="attention">
             <AttentionIcon />
-            Atención este servicio gratuito se brinda sin ninguna garantía. El
-            usuario utiliza este servicio bajo su propio riesgo. La
-            responsabilidad de proteger sus conferencias es únicamente del
-            usuario.
+            <strong>Atención</strong> este servicio gratuito se brinda sin
+            ninguna garantía. El usuario utiliza este servicio bajo su propio
+            riesgo. La responsabilidad de proteger sus conferencias es
+            únicamente del usuario.
           </p>
           <PrimaryButton
             color="primary"
