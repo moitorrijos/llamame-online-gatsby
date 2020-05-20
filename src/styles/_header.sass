@@ -26,11 +26,21 @@ header
   display: grid
   column-gap: 20px
   row-gap: 20px
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: auto 1fr
   align-items: center
   padding: 1rem 3rem
 
   @media screen and (max-width: 500px)
+    grid-template-columns: 1fr
+
+.hero-grid
+  display: grid
+  grid-template-columns: auto 1fr
+  column-gap: 20px
+  row-gap: 20px
+  justify-content: space-between
+
+  @media screen and (max-width: 700px)
     grid-template-columns: 1fr
 
 .logo
@@ -46,5 +56,4 @@ header
   justify-self: self-end
 
 .hero-image
-  max-width: 600px
   align-self: self-end

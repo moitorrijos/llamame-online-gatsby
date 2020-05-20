@@ -22,7 +22,7 @@ const Header = () => (
         </PrimaryButton>
       </div>
     </div>
-    <div className="main-container grid">
+    <div className="main-container hero-grid">
       <div className="inner-text">
         <h1>
           Centrales Telefónicas y Videollamadas en la nube para tu empresa

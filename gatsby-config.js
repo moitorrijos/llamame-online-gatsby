@@ -20,7 +20,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Quicksand", "Nunito"],
+          families: ["Quicksand:400,600", "Nunito400:700"],
         },
       },
     },
