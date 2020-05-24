@@ -1,0 +1,24 @@
+stages:
+  - deploy
+
+deploy-production:
+  image: ilyasemenov/gitlab-ci-git-push
+  stage: deploy
+  environment:
+    name: production
+    url: https://llamame-website.apps.llamame.online
+  only:
+    - master
+  script:
+    - git-push ssh://dokku@apps.llamame.online:22/llamame-website
+
+deploy-staging:
+  image: ilyasemenov/gitlab-ci-git-push
+  stage: deploy
+  environment:
+    name: staging
+    url: https://llamame-website.apps.llamame.online
+  only:
+    - develop
+  script:
+          - git-push ssh://dokku@apps.llamame.online:22/llamame-website-staging
