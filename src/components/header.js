@@ -27,6 +27,10 @@ const Header = () => (
         <h1>
           Centrales Telefónicas y Videollamadas en la nube para tu empresa
         </h1>
+        <p>
+          Atiende llamadas de teléfonos fijos, móviles y videollamadas en un
+          solo servicio.
+        </p>
         <PrimaryButton color="white" linkTo="#pricing-cards">
           Conoce Nuestros Planes <ArrowDown style={{ marginLeft: 20 }} />
         </PrimaryButton>

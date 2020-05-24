@@ -3,7 +3,7 @@
 
 footer
   background: $primary-color
-  color: white
+  color: lighten($primary-color, 40%)
   border-top: 0.75rem solid $secondary-color
 
   p
@@ -15,6 +15,9 @@ footer
   svg
     width: 100%
     margin-bottom: 20px
+    fill: lighten($primary-color, 40%)
+    path
+      fill: lighten($primary-color, 40%)
 
   h3
     display: flex
@@ -32,6 +35,9 @@ footer
   .servicio
     padding-top: 2rem
 
+.footer
+  padding: 3rem 0
+
 .footer-logo
   max-width: 200px
 
@@ -43,7 +49,6 @@ footer
 
 .copyright
   background: darken($primary-color, 15%)
-  color: white
   text-align: center
   letter-spacing: 1px
   overflow: auto
@@ -51,10 +56,10 @@ footer
   p
     margin: 0.5rem 0
     font-size: 0.8rem
-    color: lighten($primary-color, 40%)
+    color: lighten($primary-color, 30%)
 
   a
-    color: lighten($primary-color, 50%)
+    color: lighten($primary-color, 35%)
 
   .inner-container
     padding: 0.5rem 0
