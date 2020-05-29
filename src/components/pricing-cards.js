@@ -1,6 +1,5 @@
 import React from "react"
 import PrimaryButton from "./primary-button"
-import "../styles/_pricing-cards.sass"
 
 const PricingCards = () => (
   <>

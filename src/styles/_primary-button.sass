@@ -1,5 +1,3 @@
-@import 'colors'
-
 a.conference-link
   text-decoration: none
   display: inline-flex
@@ -19,22 +17,30 @@ a.conference-link
     border-color: white
     color: white
 
-    &:hover
-      background-color: transparentize(white, 0.70)
-
     svg
       fill: white
       max-width: 1rem
+
+    &:hover
+      background-color: white
+      color: $primary-color
+
+      svg
+        fill: $primary-color
 
   &.primary
     color: $primary-color
     border-color: $primary-color
 
-    &:hover
-      background-color: transparentize($primary-color, 0.70)
-
     svg
       fill: $primary-color
+
+    &:hover
+      background-color: $primary-color
+      color: white
+
+      svg
+        fill: white
 
 header a.conference-link
   margin: 0

@@ -8,8 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Footer from "../components/footer"
-import "../styles/_reset.sass"
-import "../styles/_layout.sass"
+import "../styles/main.sass"
 
 const Layout = ({ children }) => (
   <>

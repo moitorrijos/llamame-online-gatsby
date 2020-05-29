@@ -1,27 +1,13 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from "../icons/llamame-online-logo.svg"
+import Navigation from "./navigation"
 import HeroImage from "../icons/llamame-online-hero.svg"
 import PrimaryButton from "./primary-button"
 import ArrowDown from "../icons/arrow-down.svg"
-import Email from "../icons/email.svg"
-import "../styles/_header.sass"
 
-const Header = () => (
+const Hero = () => (
   <header>
-    <div className="main-container header-grid">
-      <div className="logo">
-        <Logo className="llamame-online-logo" />
-      </div>
-      <div className="nav hide-on-mobile">
-        <a href="#pricing-cards" className="hide-on-tablet">
-          Conoce Nuestros Planes
-        </a>
-        <PrimaryButton color="white">
-          Contáctanos <Email style={{ marginLeft: 20 }} />
-        </PrimaryButton>
-      </div>
-    </div>
+    <Navigation />
     <div className="main-container hero-grid">
       <div className="inner-text">
         <h1>
@@ -42,12 +28,12 @@ const Header = () => (
   </header>
 )
 
-Header.propTypes = {
+Hero.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Hero.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Hero

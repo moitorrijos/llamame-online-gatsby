@@ -9,17 +9,17 @@ import AttentionIcon from "../icons/attention-small.svg"
 import AppStoreIcon from "../icons/download-on-the-app-store-apple.svg"
 import GooglePlayIcon from "../icons/google-play-badge.svg"
 import LlamameOnlineApp from "../icons/llamame-online-app.svg"
-import Header from "../components/header"
+import Hero from "../components/hero"
 
 const IndexPage = () => (
   <>
-    <Header />
+    <SEO
+      title="Llámame Online"
+      description="Centrales Telefónicas y Videollamadas en la Nube"
+      lang="es"
+    />
+    <Hero />
     <Layout>
-      <SEO
-        title="Llámame Online"
-        description="Centrales Telefónicas y Videollamadas en la Nube"
-        lang="es"
-      />
       <PrincingCards />
       <div className="inner-container grid">
         <div className="icon desktop-image">

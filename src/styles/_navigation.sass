@@ -1,0 +1,35 @@
+.logo
+  max-width: 200px
+
+  @media screen and (max-width: 650px)
+    max-width: none
+
+  svg
+    width: 100%
+
+.nav
+  text-transform: uppercase
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: center
+
+  a
+    font-size: 0.8rem
+    display: block
+    padding: 0.5rem
+    text-decoration: none
+    border-bottom: 2px solid transparent
+    transition: all 0.25s ease-in-out
+
+    &.current-page
+      border-bottom: 2px solid white
+
+    &:hover
+      border-bottom: 2px solid transparentize(white, 0.5)
+
+  .contact-button
+    padding: 0.5rem 2rem
+    @extend .conference-link
+    svg
+      width: 1rem

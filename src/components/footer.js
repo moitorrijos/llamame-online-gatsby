@@ -2,7 +2,6 @@ import React from "react"
 import Logo from "../icons/llamame-online-logo.svg"
 import LogoSr from "../icons/logo-sr.svg"
 import MoiTorrijosLogo from "../icons/moitorrijos-logo.svg"
-import "../styles/_footer.sass"
 
 const Footer = () => (
   <footer>
