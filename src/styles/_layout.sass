@@ -31,6 +31,8 @@ h2
 h3
   font-size: 1.6rem
   margin: 1rem 0
+  font-family: $body-font-family
+  font-weight: 400
 
 p
   margin: 2rem 0
@@ -52,6 +54,24 @@ p
     grid-template-columns: 1fr
     row-gap: 20px
     align-items: center
+
+.auto-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+  column-gap: 20px
+
+.centered
+  text-align: center
+  margin: 2rem auto
+
+.max-width
+  max-width: 800px
+
+.como-funciona-inicio
+  & > div
+    padding: 0 2rem
+  svg
+    width: 100%
 
 .icon
   svg

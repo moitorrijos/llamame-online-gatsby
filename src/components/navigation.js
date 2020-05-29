@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Logo from "../icons/llamame-online-logo.svg"
-import PrimaryButton from "./primary-button"
 import Email from "../icons/email.svg"
 
 const Navigation = () => (
