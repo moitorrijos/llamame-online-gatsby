@@ -21,6 +21,10 @@
     text-decoration: none
     border-bottom: 2px solid transparent
     transition: all 0.25s ease-in-out
+    color: white
+
+    &:visited
+      color: white
 
     &.current-page
       border-bottom: 2px solid white
@@ -28,8 +32,8 @@
     &:hover
       border-bottom: 2px solid transparentize(white, 0.5)
 
-  .contact-button
-    padding: 0.5rem 2rem
+  .contact-button.contact-button.contact-button
     @extend .conference-link
+    padding: 0.5rem 2rem
     svg
       width: 1rem

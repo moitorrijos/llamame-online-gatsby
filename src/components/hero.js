@@ -2,8 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Navigation from "./navigation"
 import HeroImage from "../icons/llamame-online-hero.svg"
-import PrimaryButton from "./primary-button"
-import ArrowDown from "../icons/arrow-down.svg"
+import { Link } from "gatsby"
 
 const Hero = () => (
   <header>
@@ -17,9 +16,9 @@ const Hero = () => (
           Atiende llamadas de teléfonos fijos, móviles y videollamadas en un
           solo servicio.
         </p>
-        <PrimaryButton color="white" linkTo="#pricing-cards">
-          Conoce Nuestros Planes <ArrowDown style={{ marginLeft: 20 }} />
-        </PrimaryButton>
+        <Link className="conference-link white" to="/precios">
+          Conoce Nuestros Planes
+        </Link>
       </div>
       <div className="hero-image icon right">
         <HeroImage />

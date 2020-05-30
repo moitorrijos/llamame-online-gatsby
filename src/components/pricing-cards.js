@@ -7,35 +7,37 @@ const PricingCards = () => (
       <div className="pricing-card">
         <h3>Micro Central</h3>
         <ul>
-          <li>Un Número de Teléfono Local*</li>
-          <li>Central Telefónica Virtual</li>
+          <li>Un Número de Teléfono Local* y dos llamadas simultáneas.</li>
+          <li>Central Telefónica Virtual con 5 extensiones</li>
         </ul>
         <h2>
-          USD$75.00 <small>/mes</small>
+          USD$34.50<small>/mes</small>
         </h2>
         <PrimaryButton color="primary">Selecciona este Plan</PrimaryButton>
       </div>
       <div className="pricing-card">
         <h3>Central Privada</h3>
         <ul>
-          <li>X Números de Teléfonos Locales*</li>
-          <li>Central Telefónica Virtual</li>
-          <li>Recepción Grabada con Extensiontes</li>
-          <li>Líneas Separadas por Departamento</li>
+          <li>Un Número de Teléfono Local* y 5 llamadas simultáneas.</li>
+          <li>Central Telefónica Virtual con 25 extensiones</li>
+          <li>Recepción Virtual con Menú de Voz</li>
+          <li>Grabación de llamadas y servicios para Call Center</li>
         </ul>
         <h2>
-          USD$150 <small>/mes</small>
+          USD$74.50<small>/mes</small>
         </h2>
         <PrimaryButton color="primary">Selecciona este Plan</PrimaryButton>
       </div>
       <div className="pricing-card">
         <h3>Plan Corporativo</h3>
         <ul>
-          <li>Y Números de Teléfonos Locales*</li>
-          <li>Central Telefónica Virtual</li>
-          <li>Recepción Grabada con Extensiones</li>
-          <li>Líneas Separadas por Departamento</li>
+          <li>
+            Múltiples Números de Teléfonos Locales* y llamadas simultáneas
+          </li>
+          <li>Central Telefónica Virtual Privada</li>
+          <li>Recepción Virtual con Menú de Voz</li>
           <li>Sistema de Videoconferencias personalizado</li>
+          <li>y más</li>
         </ul>
         <PrimaryButton color="primary">Contáctanos para precios</PrimaryButton>
       </div>
