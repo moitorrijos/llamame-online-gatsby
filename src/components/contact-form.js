@@ -17,8 +17,8 @@ const ContactForm = () => {
         <input type="email" name="tu-correo" required />
       </label>
       <label htmlFor="tu-telefono">
-        Tu Número de Teléfono <small className="required">necesario</small>
-        <input type="tel" name="tu-telefono" required />
+        Tu Número de Teléfono
+        <input type="tel" name="tu-telefono" />
       </label>
       <label htmlFor="tu-mensaje">
         Tu Mensaje <small className="required">necesario</small>

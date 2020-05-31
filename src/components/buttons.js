@@ -7,11 +7,11 @@ const Buttons = () => {
       <Link activeClassName="bottom-current-page" to="/precios">
         Conoce Nuestros Planes
       </Link>
+      <Link activeClassName="bottom-current-page" to="/como-funciona">
+        Conoce Cómo Funciona
+      </Link>
       <Link activeClassName="bottom-current-page" to="/quienes-somos">
         Conoce Quiénes Somos
-      </Link>
-      <Link activeClassName="bottom-current-page" to="/videollamadas">
-        Crea una Videollamada
       </Link>
       <Link
         activeClassName="bottom-current-page"
