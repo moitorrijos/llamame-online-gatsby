@@ -5,6 +5,7 @@ import Hero from "../components/hero"
 import Telefono from "../icons/telefono-nube.svg"
 import Central from "../icons/central-nube.svg"
 import Transferencia from "../icons/transfiere-inicio.svg"
+import Buttons from "../components/buttons"
 
 const IndexPage = () => (
   <>
@@ -46,6 +47,7 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
+      <Buttons />
     </Layout>
   </>
 )

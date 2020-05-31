@@ -10,6 +10,7 @@ import AttentionIcon from "../icons/attention-small.svg"
 import AppStoreIcon from "../icons/download-on-the-app-store-apple.svg"
 import GooglePlayIcon from "../icons/google-play-badge.svg"
 import LlamameOnlineApp from "../icons/llamame-online-app.svg"
+import Buttons from "../components/buttons"
 
 const Videollamadas = () => (
   <>
@@ -23,7 +24,7 @@ const Videollamadas = () => (
       <a
         href="https://hey.llamame.online/"
         className="conference-link primary centered"
-        style={{ display: "block", margin: "0 auto", maxWidth: "360px" }}
+        style={{ display: "block", margin: "0 auto", maxWidth: "500px" }}
       >
         <VideoConference style={{ marginRight: 20 }} /> Inicia una VideoLLamada
         Gratuita
@@ -91,6 +92,7 @@ const Videollamadas = () => (
           <LlamameOnlineApp />
         </div>
       </div>
+      <Buttons />
     </Layout>
   </>
 )

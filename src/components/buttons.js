@@ -1,13 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Buttons = () => (
-  <div className="main-container buttons">
-    <Link to="/precios" className="conference-link primary">
-      Conoce Nuestros Planes
-    </Link>
-    <Link to="/quienes-somos">Conoce Quiénes Somos</Link>
-  </div>
-)
+const Buttons = () => {
+  return (
+    <div className="main-container buttons hide-on-mobile">
+      <Link activeClassName="bottom-current-page" to="/precios">
+        Conoce Nuestros Planes
+      </Link>
+      <Link activeClassName="bottom-current-page" to="/quienes-somos">
+        Conoce Quiénes Somos
+      </Link>
+      <Link activeClassName="bottom-current-page" to="/videollamadas">
+        Crea una Videollamada
+      </Link>
+      <Link
+        activeClassName="bottom-current-page"
+        to="/contactanos"
+        className="conference-link primary"
+      >
+        Contáctanos
+      </Link>
+    </div>
+  )
+}
 
 export default Buttons

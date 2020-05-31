@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Contactanos from "../icons/llamame-online-contactanos.svg"
+import ContactForm from "../components/contact-form"
 
 const ContactPage = () => (
   <>
@@ -26,6 +27,7 @@ const ContactPage = () => (
           <p className="big">
             Llena el formulario y te contactaremos muy pronto
           </p>
+          <ContactForm />
         </div>
         <div className="contact-image">
           <Contactanos />

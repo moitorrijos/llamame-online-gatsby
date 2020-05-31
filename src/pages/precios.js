@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import PricingCards from "../components/pricing-cards"
+import Buttons from "../components/buttons"
 
 const Precios = () => (
   <>
@@ -21,6 +22,7 @@ const Precios = () => (
         y mucho más.
       </p>
       <PricingCards />
+      <Buttons />
     </Layout>
   </>
 )
