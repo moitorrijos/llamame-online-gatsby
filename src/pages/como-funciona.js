@@ -17,8 +17,8 @@ const ComoFunciona = () => {
       <Header />
       <Layout>
         <h2 className="centered">Cómo Funciona tu Central en la Nube</h2>
-        <div className="como-funciona main-container">
-          <div className="pasos pasos-imagen">
+        <div className="como-funciona inner-container">
+          <div className="pasos pasos-imagen paso-imagen-1">
             <Paso1 />
           </div>
           <div className="pasos paso-1">
@@ -37,10 +37,10 @@ const ComoFunciona = () => {
               no estén en el mismo edificio, ciudad… !o país!.
             </p>
           </div>
-          <div className="pasos pasos-imagen">
+          <div className="pasos pasos-imagen paso-imagen-2">
             <Paso2 />
           </div>
-          <div className="pasos pasos-imagen">
+          <div className="pasos pasos-imagen paso-imagen-3">
             <Paso3 />
           </div>
           <div className="pasos paso-3">
