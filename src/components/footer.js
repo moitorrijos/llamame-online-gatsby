@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="footer">
       <div className="page-footer">
         <div className="servicio">
-          <h3>Nuestro Servicio</h3>
+          <h3>Llámame Online</h3>
           <div className="footer-column">
             <LogoFooter className="footer-logo" />
             <p>
@@ -18,7 +18,7 @@ const Footer = () => (
           </div>
         </div>
         <div className="quienes-somos">
-          <h3>Quiénes Somos</h3>
+          <h3>ServidoresRapidos.net</h3>
           <div className="footer-column">
             <LogoSr />
             <p>

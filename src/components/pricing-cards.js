@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import PrimaryButton from "./primary-button"
 
 const PricingCards = () => (
@@ -13,7 +14,12 @@ const PricingCards = () => (
         <h2>
           USD$34.50<small>/mes</small>
         </h2>
-        <PrimaryButton color="primary">Selecciona este Plan</PrimaryButton>
+        <PrimaryButton
+          color="primary"
+          linkTo="http://llamame-online.test/product/micro-central/"
+        >
+          Ver Detalles del Plan
+        </PrimaryButton>
       </div>
       <div className="pricing-card">
         <h3>Central Privada</h3>
@@ -26,7 +32,12 @@ const PricingCards = () => (
         <h2>
           USD$74.50<small>/mes</small>
         </h2>
-        <PrimaryButton color="primary">Selecciona este Plan</PrimaryButton>
+        <PrimaryButton
+          color="primary"
+          linkTo="http://llamame-online.test/product/central-privada/"
+        >
+          Ver Detalles del Plan
+        </PrimaryButton>
       </div>
       <div className="pricing-card">
         <h3>Plan Corporativo</h3>
@@ -39,7 +50,9 @@ const PricingCards = () => (
           <li>Sistema de Videoconferencias personalizado</li>
           <li>y más</li>
         </ul>
-        <PrimaryButton color="primary">Contáctanos para precios</PrimaryButton>
+        <Link className="primary conference-link" to="/contactanos">
+          Contáctanos para precios
+        </Link>
       </div>
     </div>
     <div className="asterisk">
