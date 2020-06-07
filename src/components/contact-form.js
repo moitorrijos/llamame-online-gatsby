@@ -38,17 +38,21 @@ const ContactForm = () => {
         <>
           <form
             onSubmit={async event => {
-              event.preventDefault()
-              createSubmission({
-                variables: {
-                  clientMutationId: "prueba",
-                  tuNombre,
-                  tuCorreo,
-                  tuTelefono,
-                  tuSaludo,
-                  tuMensaje,
-                },
-              })
+              try {
+                event.preventDefault()
+                createSubmission({
+                  variables: {
+                    clientMutationId: "prueba",
+                    tuNombre,
+                    tuCorreo,
+                    tuTelefono,
+                    tuSaludo,
+                    tuMensaje,
+                  },
+                })
+              } catch (error) {
+                console.log(error)
+              }
             }}
           >
             <label htmlFor="tuNombre">
@@ -115,13 +119,18 @@ const ContactForm = () => {
             </button>
           </form>
           {error && (
-            <div className="error">
-              Disculpa, ha ocurrido un error. Vuelve a intentarlo más tarde.
+            <div className="wp-mensaje error">
+              <p>
+                Disculpa, ha ocurrido un error. Por favor, vuelve a intentarlo
+                más tarde.
+              </p>
             </div>
           )}
           {data && (
-            <div className="success">
-              Gracias por contactarnos. Te estaremos escribiendo muy pronto.
+            <div className="wp-mensaje success">
+              <p>
+                Gracias por contactarnos. Te estaremos escribiendo muy pronto.
+              </p>
             </div>
           )}
         </>
