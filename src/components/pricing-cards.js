@@ -16,7 +16,7 @@ const PricingCards = () => (
         </h2>
         <PrimaryButton
           color="primary"
-          linkTo={`${process.env.GATSBY_WP_URL}/product/micro-central`}
+          linkTo={`${process.env.GATSBY_WP_URL}/producto/micro-central`}
         >
           Ver Detalles del Plan
         </PrimaryButton>
@@ -34,7 +34,7 @@ const PricingCards = () => (
         </h2>
         <PrimaryButton
           color="primary"
-          linkTo={`${process.env.GATSBY_WP_URL}/product/central-privada`}
+          linkTo={`${process.env.GATSBY_WP_URL}/producto/central-privada`}
         >
           Ver Detalles del Plan
         </PrimaryButton>
