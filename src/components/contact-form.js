@@ -32,6 +32,7 @@ const ContactForm = () => {
   const [tuTelefono, setTuTelefono] = useState("")
   const [tuSaludo, setTuSaludo] = useState("")
   const [tuMensaje, setTuMensaje] = useState("")
+  const [sent, setSent] = useState(false)
   return (
     <Mutation mutation={contact_mutation}>
       {(createSubmission, { loading, error, data }) => (
@@ -40,9 +41,9 @@ const ContactForm = () => {
             onSubmit={async event => {
               try {
                 event.preventDefault()
-                createSubmission({
+                await createSubmission({
                   variables: {
-                    clientMutationId: "prueba",
+                    clientMutationId: Date.now().toString(),
                     tuNombre,
                     tuCorreo,
                     tuTelefono,
@@ -50,8 +51,9 @@ const ContactForm = () => {
                     tuMensaje,
                   },
                 })
+                setSent(true)
               } catch (error) {
-                console.log(error)
+                console.error(error)
               }
             }}
           >
@@ -113,7 +115,11 @@ const ContactForm = () => {
                 value={tuMensaje}
               />
             </label>
-            <button type="submit" className={loading ? "enviando" : ""}>
+            <button
+              type="submit"
+              className={loading ? "enviando" : ""}
+              disabled={sent ? "disabled" : ""}
+            >
               {loading ? "Enviando" : "Enviar"}
               {loading ? <Sending /> : <Send />}
             </button>
@@ -129,7 +135,8 @@ const ContactForm = () => {
           {data && (
             <div className="wp-mensaje success">
               <p>
-                Gracias por contactarnos. Te estaremos escribiendo muy pronto.
+                Tu mensaje ha sido enviado exitosamente. Gracias por
+                escribirnos. Te estaremos contactando muy pronto.
               </p>
             </div>
           )}

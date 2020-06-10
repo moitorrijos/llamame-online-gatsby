@@ -12,7 +12,7 @@ const PricingCards = () => (
           <li>Central Telefónica Virtual con 5 extensiones</li>
         </ul>
         <h2>
-          USD$34.50<small>/mes</small>
+          <small>USD</small>$34.50<sub>/mes</sub>
         </h2>
         <PrimaryButton
           color="primary"
@@ -30,7 +30,7 @@ const PricingCards = () => (
           <li>Grabación de llamadas y servicios para Call Center</li>
         </ul>
         <h2>
-          USD$74.50<small>/mes</small>
+          <small>USD</small>$74.50<sub>/mes</sub>
         </h2>
         <PrimaryButton
           color="primary"
