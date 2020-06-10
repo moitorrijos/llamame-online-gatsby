@@ -13,6 +13,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     {
+      resolve: "gatsby-plugin-apollo",
+      options: {
+        uri: `${process.env.GATSBY_WP_URL}/graphql`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://llamame.online",
