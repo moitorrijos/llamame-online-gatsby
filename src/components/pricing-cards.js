@@ -16,9 +16,9 @@ const PricingCards = () => (
         </h2>
         <PrimaryButton
           color="primary"
-          linkTo={`${process.env.GATSBY_WP_URL}/producto/micro-central`}
+          linkTo={`${process.env.GATSBY_WP_URL}/finalizar-compra/?add-to-cart=9`}
         >
-          Ver Detalles del Plan
+          Comprar
         </PrimaryButton>
       </div>
       <div className="pricing-card">
@@ -34,9 +34,9 @@ const PricingCards = () => (
         </h2>
         <PrimaryButton
           color="primary"
-          linkTo={`${process.env.GATSBY_WP_URL}/producto/central-privada`}
+          linkTo={`${process.env.GATSBY_WP_URL}/finalizar-compra/?add-to-cart=10`}
         >
-          Ver Detalles del Plan
+          Comprar
         </PrimaryButton>
       </div>
       <div className="pricing-card">
@@ -57,8 +57,9 @@ const PricingCards = () => (
     </div>
     <div className="asterisk">
       <p>
-        * El número de teléfono puede ser en Panamá o en otros países,
-        contáctanos para conocer la lista de países disponibles.
+        * El número de teléfono puede ser en Panamá o en otros países,{" "}
+        <Link to="/contactanos">contáctanos</Link> para conocer la lista de
+        países disponibles.
       </p>
     </div>
   </>
