@@ -1,22 +1,24 @@
 import React from "react"
-import Logo from "../icons/llamame-online-logo.svg"
+import LogoFooter from "../icons/llamame-online-logo-footer.svg"
 import LogoSr from "../icons/logo-sr.svg"
 import MoiTorrijosLogo from "../icons/moitorrijos-logo.svg"
-import "../styles/_footer.sass"
 
 const Footer = () => (
   <footer>
     <div className="footer">
       <div className="page-footer">
         <div className="servicio">
-          <Logo className="footer-logo" />
-          <p>
-            Llámame online es un sistema de comunicación unificada creada por
-            ServidoresRapidos.net
-          </p>
+          <h3>Llámame Online</h3>
+          <div className="footer-column">
+            <LogoFooter className="footer-logo" />
+            <p>
+              Llámame online es un sistema de comunicación unificada creada por
+              ServidoresRapidos.net
+            </p>
+          </div>
         </div>
         <div className="quienes-somos">
-          <h3>Quiénes Somos</h3>
+          <h3>ServidoresRapidos.net</h3>
           <div className="footer-column">
             <LogoSr />
             <p>
@@ -50,7 +52,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="copyright">
-      <div className="inner-container">
+      <div className="footer-inner-container">
         <p>
           Llámame Online es un servicio de
           {` `}

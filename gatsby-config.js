@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Llámame Online`,
@@ -8,6 +12,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-apollo",
+      options: {
+        uri: `${process.env.GATSBY_WP_URL}/graphql`,
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
@@ -51,6 +61,13 @@ module.exports = {
         rule: {
           include: /icons/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-tawk.to`,
+      options: {
+        tawkId: "5ed29ca6c75cbf1769f0db37",
+        // get this from the tawk script widget
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

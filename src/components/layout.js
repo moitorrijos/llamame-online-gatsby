@@ -1,21 +1,11 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Footer from "../components/footer"
-import "../styles/_reset.sass"
-import "../styles/_layout.sass"
+import "../styles/main.sass"
 
 const Layout = ({ children }) => (
   <>
-    <div className="main-container">
-      <main>{children}</main>
-    </div>
+    <div className="main-container">{children}</div>
     <Footer />
   </>
 )

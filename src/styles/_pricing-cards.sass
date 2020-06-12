@@ -1,8 +1,6 @@
-@import 'colors'
-
 .pricing-cards
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
   column-gap: 20px
   row-gap: 20px
   color: $font-color
@@ -22,12 +20,14 @@
 
   &:first-child
     border-top: 40px solid $primary-color
+    margin-top: 2rem
 
   &:nth-child(2)
-    border-top: 40px solid $yellow
+    border-top: 50px solid $secondary-color
 
   &:nth-child(3)
-    border-top: 40px solid $green
+    border-top: 40px solid $yellow
+    margin-top: 2rem
 
   h2, h3
     text-align: center

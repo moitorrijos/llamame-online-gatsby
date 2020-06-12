@@ -1,6 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
 import PrimaryButton from "./primary-button"
-import "../styles/_pricing-cards.sass"
 
 const PricingCards = () => (
   <>
@@ -8,43 +8,58 @@ const PricingCards = () => (
       <div className="pricing-card">
         <h3>Micro Central</h3>
         <ul>
-          <li>Un Número de Teléfono Local*</li>
-          <li>Central Telefónica Virtual</li>
+          <li>Un Número de Teléfono Local* y dos llamadas simultáneas.</li>
+          <li>Central Telefónica Virtual con 5 extensiones</li>
         </ul>
         <h2>
-          USD$75.00 <small>/mes</small>
+          <small>USD</small>$34.50<sub>/mes</sub>
         </h2>
-        <PrimaryButton color="primary">Selecciona este Plan</PrimaryButton>
+        <PrimaryButton
+          color="primary"
+          linkTo={`${process.env.GATSBY_WP_URL}/finalizar-compra/?add-to-cart=9`}
+        >
+          Comprar
+        </PrimaryButton>
       </div>
       <div className="pricing-card">
         <h3>Central Privada</h3>
         <ul>
-          <li>X Números de Teléfonos Locales*</li>
-          <li>Central Telefónica Virtual</li>
-          <li>Recepción Grabada con Extensiontes</li>
-          <li>Líneas Separadas por Departamento</li>
+          <li>Un Número de Teléfono Local* y 5 llamadas simultáneas.</li>
+          <li>Central Telefónica Virtual con 25 extensiones</li>
+          <li>Recepción Virtual con Menú de Voz</li>
+          <li>Grabación de llamadas y servicios para Call Center</li>
         </ul>
         <h2>
-          USD$150 <small>/mes</small>
+          <small>USD</small>$74.50<sub>/mes</sub>
         </h2>
-        <PrimaryButton color="primary">Selecciona este Plan</PrimaryButton>
+        <PrimaryButton
+          color="primary"
+          linkTo={`${process.env.GATSBY_WP_URL}/finalizar-compra/?add-to-cart=10`}
+        >
+          Comprar
+        </PrimaryButton>
       </div>
       <div className="pricing-card">
         <h3>Plan Corporativo</h3>
         <ul>
-          <li>Y Números de Teléfonos Locales*</li>
-          <li>Central Telefónica Virtual</li>
-          <li>Recepción Grabada con Extensiones</li>
-          <li>Líneas Separadas por Departamento</li>
+          <li>
+            Múltiples Números de Teléfonos Locales* y llamadas simultáneas
+          </li>
+          <li>Central Telefónica Virtual Privada</li>
+          <li>Recepción Virtual con Menú de Voz</li>
           <li>Sistema de Videoconferencias personalizado</li>
+          <li>y más</li>
         </ul>
-        <PrimaryButton color="primary">Contáctanos para precios</PrimaryButton>
+        <Link className="primary conference-link" to="/contactanos">
+          Contáctanos para precios
+        </Link>
       </div>
     </div>
     <div className="asterisk">
       <p>
-        * El número de teléfono puede ser en Panamá o en otros países,
-        contáctanos para conocer la lista de países disponibles.
+        * El número de teléfono puede ser en Panamá o en otros países,{" "}
+        <Link to="/contactanos">contáctanos</Link> para conocer la lista de
+        países disponibles.
       </p>
     </div>
   </>
