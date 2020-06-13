@@ -48,6 +48,7 @@ const PricingCards = () => (
           <li>Central Telefónica Virtual Privada</li>
           <li>Recepción Virtual con Menú de Voz</li>
           <li>Sistema de Videoconferencias personalizado</li>
+          <li>Call Center Virtual incluyendo personal (agentes)</li>
           <li>y más</li>
         </ul>
         <Link className="primary conference-link" to="/contactanos">
