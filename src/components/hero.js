@@ -9,9 +9,7 @@ const Hero = () => (
     <Navigation />
     <div className="main-container hero-grid">
       <div className="inner-text">
-        <h1>
-          Centrales Telefónicas y Videollamadas en la nube para tu empresa
-        </h1>
+        <h1>Centrales Telefónicas y Call Center Virtual en la nube.</h1>
         <p>
           Atiende llamadas de teléfonos fijos, móviles y videollamadas en un
           solo servicio.

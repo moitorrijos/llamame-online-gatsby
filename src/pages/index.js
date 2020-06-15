@@ -5,6 +5,7 @@ import Hero from "../components/hero"
 import Telefono from "../icons/telefono-nube.svg"
 import Central from "../icons/central-nube.svg"
 import Transferencia from "../icons/transfiere-inicio.svg"
+import Callcenter from "../icons/call-center.svg"
 import Buttons from "../components/buttons"
 
 const IndexPage = () => (
@@ -26,24 +27,32 @@ const IndexPage = () => (
         <div className="telefono-nube">
           <Telefono />
           <p>
-            Adquiere uno o varios números de teléfono y recibe llamadas en tu
-            computadora personal, tu teléfono tradicional de escritorio o
-            teléfono inteligente.
+            Adquiere uno o varios números de teléfono y{" "}
+            <strong>recibe llamadas en tu computadora</strong>, tu teléfono
+            tradicional de escritorio o teléfono inteligente.
           </p>
         </div>
         <div className="central-nube">
           <Central />
           <p>
             Convierte tu computadora personal o teléfono inteligente en tu
-            extensión en la central telefónica de tu empresa con nuestro
-            servicio en la nube.
+            extensión en <strong>la central telefónica de tu empresa</strong>{" "}
+            con nuestro servicio en la nube.
           </p>
         </div>
         <div className="transferencias">
           <Transferencia />
           <p>
-            Transfiere llamadas a tus colaboradores muy fácilmente aunque no
-            estén en el mismo lugar físicamente.
+            <strong>Transfiere llamadas a tus colaboradores</strong> muy
+            fácilmente aunque no estén en el mismo edificio, ciudad o país.
+          </p>
+        </div>
+        <div className="call-center">
+          <Callcenter />
+          <p>
+            Descomplícate con nuestro{" "}
+            <strong>servicio de Call Center Virtual llave en mano</strong>,
+            incluyendo el personal y toda la plataforma.
           </p>
         </div>
       </div>
