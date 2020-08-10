@@ -8,11 +8,12 @@ const PricingCards = () => (
       <div className="pricing-card">
         <h3>Micro Central</h3>
         <ul>
-          <li>Un Número de Teléfono Local* y dos llamadas simultáneas.</li>
-          <li>Central Telefónica Virtual con 5 extensiones</li>
+          <li>1 Número de Teléfono Local* y 2 llamadas simultáneas.</li>
+          <li>Dos extensiones virtuales</li>
+          <li>Recepción Virtual con Menú de Voz</li>
         </ul>
         <h2>
-          <small>USD</small>$34.50<sub>/mes</sub>
+          <small>USD</small>$12.50<sub>/mes</sub>
         </h2>
         <PrimaryButton
           color="primary"
@@ -24,13 +25,13 @@ const PricingCards = () => (
       <div className="pricing-card">
         <h3>Central Privada</h3>
         <ul>
-          <li>Un Número de Teléfono Local* y 5 llamadas simultáneas.</li>
-          <li>Central Telefónica Virtual con 25 extensiones</li>
+          <li>2 Números de Teléfono Locales* y 4 llamadas simultáneas.</li>
+          <li>Central Telefónica Virtual con hasta 20 extensiones</li>
           <li>Recepción Virtual con Menú de Voz</li>
           <li>Grabación de llamadas y servicios para Call Center</li>
         </ul>
         <h2>
-          <small>USD</small>$74.50<sub>/mes</sub>
+          <small>USD</small>$39.50<sub>/mes</sub>
         </h2>
         <PrimaryButton
           color="primary"
