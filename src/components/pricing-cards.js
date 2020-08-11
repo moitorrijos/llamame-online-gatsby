@@ -6,7 +6,7 @@ const PricingCards = () => (
   <>
     <div className="pricing-cards" id="pricing-cards">
       <div className="pricing-card">
-        <h3>Micro Central</h3>
+        <h3>Línea Virtual</h3>
         <ul>
           <li>1 Número de Teléfono Local* y 2 llamadas simultáneas.</li>
           <li>Dos extensiones virtuales</li>
