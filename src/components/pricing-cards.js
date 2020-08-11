@@ -11,6 +11,8 @@ const PricingCards = () => (
           <li>1 Número de Teléfono Local* y 2 llamadas simultáneas.</li>
           <li>Dos extensiones virtuales</li>
           <li>Recepción Virtual con Menú de Voz</li>
+          <li>Llamadas entrantes ilimitadas</li>
+          <li>Llamadas salientes opcionales</li>
         </ul>
         <h2>
           <small>USD</small>$12.50<sub>/mes</sub>
@@ -29,6 +31,7 @@ const PricingCards = () => (
           <li>Central Telefónica Virtual con hasta 20 extensiones</li>
           <li>Recepción Virtual con Menú de Voz</li>
           <li>Grabación de llamadas y servicios para Call Center</li>
+          <li>Llamadas entrantes ilimitadas</li>
         </ul>
         <h2>
           <small>USD</small>$39.50<sub>/mes</sub>
