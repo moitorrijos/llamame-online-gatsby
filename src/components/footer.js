@@ -12,7 +12,7 @@ const Footer = () => (
           <div className="footer-column">
             <LogoFooter className="footer-logo" />
             <p>
-              Llámame online es un sistema de comunicación unificada creada por
+              LlamameOnline es un sistema de comunicación unificada creada por
               ServidoresRapidos.net
             </p>
           </div>
