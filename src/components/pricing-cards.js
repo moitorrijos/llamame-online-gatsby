@@ -19,7 +19,7 @@ const PricingCards = () => (
         </h2>
         <PrimaryButton
           color="primary"
-          linkTo={`${process.env.GATSBY_WP_URL}/finalizar-compra/?add-to-cart=9`}
+          linkTo={`${process.env.GATSBY_WP_URL}/servidoresrapidos/c8caa3f2`}
         >
           Comprar
         </PrimaryButton>
@@ -38,7 +38,7 @@ const PricingCards = () => (
         </h2>
         <PrimaryButton
           color="primary"
-          linkTo={`${process.env.GATSBY_WP_URL}/finalizar-compra/?add-to-cart=10`}
+          linkTo={`${process.env.GATSBY_WP_URL}/servidoresrapidos/7947b636`}
         >
           Comprar
         </PrimaryButton>
